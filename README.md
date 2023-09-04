@@ -10,5 +10,6 @@ Improved data access performance by creating a global secondary index in Amazon 
 1. Amazon DynamoDB design should be governed by the data access pattern. Every read and write that is made to a DynamoDB table has its Read usage or Write usage computed. <br>
 2. In this solution, indexes provide access to alternate query patterns, which you can use to speed up queries. After you create an index, the database maintains it for you. <br>
 3. A global secondary index (GSI) contains a selection of attributes from the base table, but they are organized by a primary key that is different from that of the table. <br>
+4. Using the badge-game-index GSI, you can quickly access the data of all players with specific badges, sorted by game. <br>
 
 ## Reproducibility Guidelines
