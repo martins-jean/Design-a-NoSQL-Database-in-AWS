@@ -62,7 +62,8 @@ Improved data access performance by creating a global secondary index in Amazon 
   8. Navigate to line 52 in the code and uncomment it, then save the file. <br>
   9. Click run (the script queries a specific player and searches for games where he has received the champs badge). <br>
   10. Review consumed capacity and duration. <br>
-
+  11. Within the same script, uncomment line 53 to see the effects of the limit parameter. <br>
+  12. Save the file and run the code once more to verify that zero records are returned. <br>
 </details>
 
 <details>
