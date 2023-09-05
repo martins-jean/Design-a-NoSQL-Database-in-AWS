@@ -48,8 +48,8 @@ Improved data access performance by creating a global secondary index in Amazon 
   - Value: Kart Brothers. <br>
   6. Click run and review the results. <br>
   7. Navigate to the Cloud9 environment you created before and open the IDE. <br>
-  8. Open a new terminal and type the following command:
-  git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/dynamoDB-tests
+  8. Open a new terminal and type the following command: <br>
+  git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/dynamoDB-tests <br>
   9. Change the directory by using: cd dynamoDB-tests. <br>
   10. Install the necessary modules with: sudo pip3 install -r requirements.txt <br>
   11. Expand the DynamoDB tests folder and open the player_score_get_item.py file. <br>
