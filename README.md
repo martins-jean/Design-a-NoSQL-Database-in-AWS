@@ -28,11 +28,20 @@ Improved data access performance by creating a global secondary index in Amazon 
 <details>
   <summary>Review the Amazon DynamoDB table structure</summary>
   1. Navigate to the DynamoDb console and click on the table you created. <br>
-  2. Click 
+  2. Click on explore table items and review the items returned. <br>
 </details>
 
 <details>
   <summary>Compare the Scan and Query Operations</summary>
+  1. Scroll up and select Query next to the Scan selection. <br>
+  2. Type a player name from your sample data, click run and review the read capacity units consumed. <br>
+  3. Click Scan and expand the filters: <br>
+  - Attribute name: badge. <br>
+  - Value: Champs. <br>
+  4. Click run and review the read capacity units consumed. <br>
+  5. Add a filter: <br>
+  - Attribute name: game. <br>
+  - Value: Kart Brothers. <br>
 </details>
 
 <details>
