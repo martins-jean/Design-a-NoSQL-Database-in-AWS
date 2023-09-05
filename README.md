@@ -52,12 +52,17 @@ Improved data access performance by creating a global secondary index in Amazon 
 <details>
   <summary>Explore the filter expression and limit parameters</summary>
   1. Navigate to the Cloud9 environment you created before and open the IDE. <br>
-  2. Open a new terminal and type the following command: git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/dynamoDB-tests <br>
+  2. Open a new terminal and type the following command: <br>
+  git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/dynamoDB-tests <br>
   3. Change the directory by using: cd dynamoDB-tests. <br>
   4. Install the necessary modules with: sudo pip3 install -r requirements.txt <br>  
   5. Expand the DynamoDB tests folder and open the "player_score_get_item.py" file. <br>
   6. Run the code (the script will get a specific item from the table) and review the output. <br>
   7. Open the "player_score_query.py" file, click run (the script will get data for a specific player) and review the consumed capacity. <br>
+  8. Navigate to line 52 in the code and uncomment it, then save the file. <br>
+  9. Click run (the script queries a specific player and searches for games where he has received the champs badge). <br>
+  10. Review consumed capacity and duration. <br>
+
 </details>
 
 <details>
