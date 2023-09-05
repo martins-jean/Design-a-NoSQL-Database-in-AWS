@@ -18,7 +18,17 @@ Improved data access performance by creating a global secondary index in Amazon 
 ## Reproducibility Guidelines
 
 <details>
+  <summary>Required setup</summary>
+  1. Create a DynamoDB table called "player_score" with sample game leaderboard data: <br>
+  - Sort key: game_timestamp (number). <br>
+  - Partition key: player_name (string). <br>
+  - Capacity mode: on-demand. <br>
+</details>
+
+<details>
   <summary>Review the Amazon DynamoDB table structure</summary>
+  1. Navigate to the DynamoDb console and click on the table you created. <br>
+  2. Click 
 </details>
 
 <details>
