@@ -23,6 +23,10 @@ Improved data access performance by creating a global secondary index in Amazon 
   - Sort key: game_timestamp (number). <br>
   - Partition key: player_name (string). <br>
   - Capacity mode: on-demand. <br>
+  2. Create a Cloud9 environment with the following configurations: <br>
+  - Environment type: EC2 instance. <br>
+  - Platform: Amazon Linux 2. <br>
+  - Instance type: t2.small. <br>
 </details>
 
 <details>
@@ -42,6 +46,7 @@ Improved data access performance by creating a global secondary index in Amazon 
   5. Add a filter: <br>
   - Attribute name: game. <br>
   - Value: Kart Brothers. <br>
+  6. Click run and review the results. <br>
 </details>
 
 <details>
