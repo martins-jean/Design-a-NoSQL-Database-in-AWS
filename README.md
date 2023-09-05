@@ -16,3 +16,23 @@ Improved data access performance by creating a global secondary index in Amazon 
 7. Whenever a table write occurs, all of the table's indexes must be updated. In a write-heavy environment with large tables, this can consume large amounts of system resources. <br>
 
 ## Reproducibility Guidelines
+
+<details>
+  <summary>Review the Amazon DynamoDB table structure</summary>
+</details>
+
+<details>
+  <summary>Compare the Scan and Query Operations</summary>
+</details>
+
+<details>
+  <summary>Explore the filter expression and limit parameters</summary>
+</details>
+
+<details>
+  <summary>Create a global secondary index (GSI) to optimize the search</summary>
+</details>
+
+<details>
+  <summary>Compare the query performance using the created GSI</summary>
+</details>
