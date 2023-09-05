@@ -11,5 +11,8 @@ Improved data access performance by creating a global secondary index in Amazon 
 2. In this solution, indexes provide access to alternate query patterns, which you can use to speed up queries. After you create an index, the database maintains it for you. <br>
 3. A global secondary index (GSI) contains a selection of attributes from the base table, but they are organized by a primary key that is different from that of the table. <br>
 4. Using the badge-game-index GSI, you can quickly access the data of all players with specific badges, sorted by game. <br>
+5. Using the games-top-scores GSI, you can quickly access the data of all top scores per game, sorted by score. <br>
+6. Whether you are using a relational database or the DynamoDB NoSQL database service, you should be careful with index creation. <br>
+7. Whenever a table write occurs, all of the table's indexes must be updated. In a write-heavy environment with large tables, this can consume large amounts of system resources. <br>
 
 ## Reproducibility Guidelines
