@@ -6,7 +6,7 @@
 The CTO of a gaming company has performance issues with the top players' scoreboard and requests a solution that can improve data access performance.
 </p>
 
-## Architecture Diagram
+## Architecture diagram
 
 ![Screenshot 2023-09-04 at 19 31 15](https://github.com/martins-jean/Design-a-NoSQL-Database-in-AWS/assets/118685801/36df7d16-c24f-4060-bc75-a008fa7bb0e5)
 
@@ -17,7 +17,7 @@ The CTO of a gaming company has performance issues with the top players' scorebo
 2. To provide access to alternate query patterns and speed up queries, we will create secondary indexes. A global secondary index (GSI) contains a selection of attributes from the base table, but they are organized by a primary key that is different from that of the table. Whenever a table write occurs, all of the table's indexes must be updated. In a write-heavy environment with large tables, this can consume large amounts of system resources. <br>
 </p>
 
-## Reproducibility Guidelines
+## Reproducibility guidelines
 
 <details>
   <summary>Required setup</summary>
