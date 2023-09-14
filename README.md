@@ -1,19 +1,21 @@
-# Design a NoSQL Database in AWS
-Improved data access performance by creating a global secondary index in Amazon DynamoDB.
+# Design a NoSQL database in AWS
+
+## Contextual overview
+
+<p align="justify">
+The CTO of a gaming company has performance issues with the top players' scoreboard and requests a solution that can improve data access performance.
+</p>
 
 ## Architecture Diagram
 
 ![Screenshot 2023-09-04 at 19 31 15](https://github.com/martins-jean/Design-a-NoSQL-Database-in-AWS/assets/118685801/36df7d16-c24f-4060-bc75-a008fa7bb0e5)
 
-## Project Overview
+## Project objectives
 
-1. Amazon DynamoDB design should be governed by the data access pattern. Every read and write that is made to a DynamoDB table has its Read usage or Write usage computed. <br>
-2. In this solution, indexes provide access to alternate query patterns, which you can use to speed up queries. After you create an index, the database maintains it for you. <br>
-3. A global secondary index (GSI) contains a selection of attributes from the base table, but they are organized by a primary key that is different from that of the table. <br>
-4. Using the badge-game-index GSI, you can quickly access the data of all players with specific badges, sorted by game. <br>
-5. Using the games-top-scores GSI, you can quickly access the data of all top scores per game, sorted by score. <br>
-6. Whether you are using a relational database or the DynamoDB NoSQL database service, you should be careful with index creation. <br>
-7. Whenever a table write occurs, all of the table's indexes must be updated. In a write-heavy environment with large tables, this can consume large amounts of system resources. <br>
+<p align="justify">
+1. To design an Amazon DynamoDB NoSQL database well, we should give the most importance to the data access pattern. Every read and write that is made to a DynamoDB table has its Read usage or Write usage computed. <br>
+2. To provide access to alternate query patterns and speed up queries, we will create secondary indexes. A global secondary index (GSI) contains a selection of attributes from the base table, but they are organized by a primary key that is different from that of the table. Whenever a table write occurs, all of the table's indexes must be updated. In a write-heavy environment with large tables, this can consume large amounts of system resources. <br>
+</p>
 
 ## Reproducibility Guidelines
 
