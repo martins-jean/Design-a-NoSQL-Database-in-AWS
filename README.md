@@ -1,4 +1,4 @@
-# Design a NoSQL database in AWS
+# Query performance improvements in a NoSQL database in AWS
 
 ## Contextual overview
 
