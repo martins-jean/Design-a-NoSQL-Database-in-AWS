@@ -66,12 +66,30 @@ The CTO of a gaming company has performance issues with the top players' scorebo
   10. Review consumed capacity and duration. <br>
   11. Within the same script, uncomment line 53 to see the effects of the limit parameter. <br>
   12. Save the file and run the code once more to verify that zero records are returned. <br>
+  13. Open the player_score_scan.py file and review the code on line 58 to handle pagination. <br>
+  14. To scan the table and search for players with Champs badges, click Run on the top navigation bar. <br>
+  15. Select and copy the printed, consumed capacity and duration results and save them in a text editor for a later performance comparison. <br>
+  16. Click on the AWS Cloud9 tab and select go back to your dashboard. <br>
 </details>
 
 <details>
   <summary>Create a global secondary index (GSI) to optimize the search</summary>
+  1. In the DynamoDB console, click tables and select the player_score table. <br>
+  2. Under indexes, select create index: <br>
+  - Partition key: badge. <br>
+  - Data type: string. <br>
+  - Sort key: game. <br>
+  - Data type: string. <br>
+  3. Review that the new index is active and select explore table items. <br>
+  4. Choose query, select the new index and under badge (partition key), type "Champs" and click run. <br>
 </details>
 
 <details>
   <summary>Compare the query performance using the created GSI</summary>
+  1. Under the items section on the left navigation options, click view table details. <br>
+  2. Under the monitor tab, scroll to CloudWatch metrics. <br>
+  3. Review the latency metrics. <br>
+  4. Return to Cloud9 and open the player_score_query_index window. Review the code and click run. <br>
+  5. Using the badge-game GSI, you can quickly access data of all players with Champs badges, sorted by game. <br>
+  6. Compare the performance results in the terminal output and you should see a reduction in the consumed capacity and duration. <br>
 </details>
